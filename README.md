@@ -21,15 +21,16 @@
 > <details>
 > <summary>- Healing formula rewritten so you heal the same each tick and heal for a %HP baseline.</summary>
 >
->>     healHP = ( clearMindMod + 2 ) / 100 * maxHP + VIT / 4 + healHPMod
->>     healMP = ( clearMindMod + 2 ) / 100 * maxMP + MND / 4 + healMPMod
->> *\*healHP and healMP x2 while effected by Signet!*
+>>     healHP = ( clearMindMod + max( 2 , tickCount % 2 * tickCount ) / 100 * maxHP + VIT / 4 + healHPMod
+>>     healMP = ( clearMindMod + max( 2 , tickCount % 2 * tickCount ) ) / 100 * maxMP + MND / 4 + healMPMod
 >
 > </details>
 > 
 > \- Healing no longer generates enmity.
 >
 > \- Healing no longer reduces TP.
+>
+> \- Healing doesn't care about signet.
 </details>
 
 <!-- <details>
