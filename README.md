@@ -141,8 +141,6 @@
 <summary><i>charutils.cpp</i></summary>
 
 > \- Difficulty check is now based on level difference rather than potential exp awarded.
->
-> \- Mobs now drop gil on death and the amount is based on the level of the mob.
 > 
 > \- Exp gained cap has been removed.
 > 
