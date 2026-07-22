@@ -67,7 +67,7 @@ xi.settings.map =
 
     -- Misc EXP related settings
     EXP_RATE                = 2.0,
-    EXP_LOSS_RATE           = 2.0,
+    EXP_LOSS_RATE           = 0.0,
     EXP_PARTY_GAP_PENALTIES = true,
 
     -- A party member's experience points are nullified if the level difference with the highest-level party member exceeds this value.
@@ -82,10 +82,10 @@ xi.settings.map =
     FAME_MULTIPLIER = 2.00,
 
     -- Percentage of experience normally lost to keep upon death. 0 means full loss, where 1 means no loss.
-    EXP_RETAIN = 0,
+    EXP_RETAIN = 1,
 
     -- Minimum level at which experience points can be lost
-    EXP_LOSS_LEVEL = 31,
+    EXP_LOSS_LEVEL = 100,
 
     -- Minimum level at which regional influence is lost in conquest when a player dies
     -- Level 5 and below don't lose influence: http://wiki.ffo.jp/html/498.html
